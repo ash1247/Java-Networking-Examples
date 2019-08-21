@@ -10,6 +10,7 @@ public class Main {
         while (port <= 65335) {
             try {
                 ServerSocket server = new ServerSocket(port);
+                server.close();
             } catch (Exception e) {
                 System.out.println(e + "Port " + port + " is open");
             }
